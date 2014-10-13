@@ -36,7 +36,7 @@ def candidates(parts):
             if len(c) >= 8:
                 break
 
-        if len(c) > 10:
+        if len(c) < 8 or len(c) > 10:
             continue
 
         if is_mod11(c):
@@ -70,6 +70,8 @@ if __name__ == '__main__':
             print('{0} is {1}'.format(n, res))
 
     else:  # gen. candidates
+        if sum(map(len, map(str, args.inputs))) < 8:
+            print('Not enough numbers, add some moar!')
         res = candidates(map(str, args.inputs))
         for part in res:
             print(part)
