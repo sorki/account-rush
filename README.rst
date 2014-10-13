@@ -14,7 +14,7 @@ Czech bank account number has to comply with following regulations of CNB:
 
  - at least 8 characters
  - maximum 10 characters
- - has to pass modulo 11 check (weighted sum has to be divisable by 11)
+ - has to pass modulo 11 check (weighted sum has to be divisible by 11)
 
 Source: http://www.cnb.cz/cs/platebni_styk/pravni_predpisy/download/vyhl_62_2004_p1.pdf
 
